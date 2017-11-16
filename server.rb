@@ -13,3 +13,8 @@ get '/about_me' do
   @interests = ['cars', 'fashion', 'music', 'writing', 'anime']
   erb :about_me
 end
+
+get '/favorites' do
+  @fav_links = ['https://twitter.com/', 'https://soundcloud.com/', 'https://www.youtube.com/', 'https://www.tumblr.com/', 'https://www.google.com/']
+  erb :favorites
+end
