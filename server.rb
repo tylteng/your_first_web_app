@@ -1,5 +1,13 @@
 require 'sinatra'
 
+get '/' do
+  redirect to '/home'
+end
+
+get '/gallery' do
+  redirect to '/portfolio'
+end
+
 get '/home' do
   erb :index
 end
